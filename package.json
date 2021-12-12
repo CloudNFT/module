@@ -1,0 +1,22 @@
+{
+  "name": "fs_readfile",
+  "version": "0.1.0",
+  "description": "promisify fs readfile and return additional info on file",
+  "author": "lynzt",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/lynzt/fs_readfile.git"
+  },
+  "main": "lib/read_file.js",
+  "scripts": {
+    "pretest": "docker build -t node/read_file_tests .",
+    "test": "mocha --recursive"
+  },
+  "dependencies": {
+    "bluebird": "~3.4.6"
+  },
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5"
+  }
+}
